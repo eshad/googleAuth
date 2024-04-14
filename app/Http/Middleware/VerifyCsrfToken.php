@@ -13,5 +13,7 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //
+        'http://googleauth.api/authenticate',
+        'api'
     ];
 }

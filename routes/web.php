@@ -23,8 +23,8 @@ Route::get('/', [AuthController::class,'showLoginForm'])->name('login');
 
 Route::get('/generate-secret-and-qr', [AuthController::class,'generateSecretAndQR']);
 Route::get('/testcode', [AuthController::class,'testCode']);
-Route::get('/authenticate', [AuthController::class,'authenticate'])->name('authenticate');
-Route::post('/authenticate', [AuthController::class,'authenticate'])->name('authenticate');
+// Route::get('/authenticate', [AuthController::class,'authenticate'])->name('authenticate');
+Route::post('/authenticate', [AuthController::class,'authenticate']);
 
 
 Route::post('/login', [AuthController::class,'login']);
